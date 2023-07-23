@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+body{
+    background-color:rgba(128, 128, 128, 0.164)!important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.navbar1{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 10%;
+    background-color: white;
+}
+.profile{
+    position: absolute;
+    right: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile span{
+    display: inline-block;
+    font-size: large;
+}
+.profile img{
+    height: 100%;
+}
+.navbar button{
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading{
+    display: inline-block;
+font-size: xx-large;
+color: blue;
+}
+.product_list_wrap{
+    width: 100vw;
+    height: 100vh;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    position: relative;
+}
+.product_wrap{
+    background-color: white;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    place-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.product_main_detail{
+    display: flex;
+    flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.action_btn_wrap{
+    display: flex;
+    gap: 5%;
+    justify-content: flex-end;
+    width: 100%;
 }
+.product_description{
+    height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center
+}
+.sort_btn{
+    position: absolute;
+right: 6%;
+height: 50px;
+top: 10px;
+width: 120px;
+border-radius: 12px;
+background-color: white;
+border: none;
+}
+.add_product_btn{
+    padding: 0.5em;
+border-radius: 12px;
+border: none;
+box-shadow: 2px 2px 2px black
+}
+.cross::after{
+    content: "X";
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0.5em;
+    width: 25px;
+display: inline-block;
+height: 25px;
+font-size: 0.8rem;
+text-align: center;
+background-color: aliceblue;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.modal_input_wrap{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 80%;
 }
