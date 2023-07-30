@@ -61,12 +61,12 @@ function Header() {
      
       <span className='heading'>E-Commerce</span>
       <span style={{fontSize:"large"}}onClick={()=>{
-  navigate('/')
+  navigate('/EcommerceSite')
 }}>Product</span>
       <button className='add_product_btn' onClick={toggle}>AddProduct<FontAwesomeIcon icon={faPlus} style={{color: "#a5df58",}} /></button>
       {/* <button className='add_product_btn' onClick={toggle}>Show Cart Product<FontAwesomeIcon icon={faPlus} style={{color: "#a5df58",}} /></button> */}
 <button type="button" class="btn btn-primary position-relative" onClick={()=>{
-  navigate('/cart')
+  navigate('/EcommerceSite/cart')
 }}>
 <FontAwesomeIcon icon={faShoppingCart} /> 
   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
