@@ -12,8 +12,8 @@ function App() {
     <div>
       <Header/>
    <Routes>
-   <Route path='/' element={<Productlist/>} />
-   <Route path='/cart' element={<Cart/>} />
+   <Route path='/EcommerceSite' element={<Productlist/>} />
+   <Route path='/EcommerceSite/cart' element={<Cart/>} />
    <Route>404 Not Found</Route>
    </Routes>
     </div>
