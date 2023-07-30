@@ -1,6 +1,6 @@
 import {React,useEffect,useState} from 'react'
 import ProductComponent from './productComponent'
-import { ProductService } from './Api'
+import axios from "axios";
 import { connect } from 'react-redux';
 import { useDispatch,useSelector } from 'react-redux';
 import { fetch_data_success } from './redux/action';
@@ -22,7 +22,7 @@ function Productlist() {
     
 
      useEffect(()=>{
-      ProductService.getAllProduct()
+       axios.get ('https://my-json-server.typicode.com/shaikhjaffar/myserver/Product')
       .then((res) => {
         setallproduct(res.data);
         dispatch(fetch_data_success(res.data));
