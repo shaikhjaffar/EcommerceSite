@@ -4,7 +4,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header';
 import Productlist from './components/productlist';
-import ProductDetail from './components/productDetail';
+import Cart from './components/cart';
+
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Header/>
    <Routes>
    <Route path='/' element={<Productlist/>} />
-   <Route path='/product/:productId' element={<ProductDetail/>} />
+   <Route path='/cart' element={<Cart/>} />
    <Route>404 Not Found</Route>
    </Routes>
     </div>
