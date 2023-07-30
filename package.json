@@ -1,6 +1,5 @@
 {
-  "homepage": "http://shaikhjaffar.github.io/EcommerceSite",
-  "name": "ecommerce",
+  "homepage": "http://shaikhjaffar.github.io/EcommerceSite/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
